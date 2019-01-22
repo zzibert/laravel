@@ -6,13 +6,13 @@
         <title>Dcoument</title>
     </head>
     <body>
+        <h1>Task For The Day</h1>
         <ul>
-            <?php foreach ($person as $key => $value) : ?>
-
-                <li><?= $key . " => " . $value; ?></li>
-
+            <?php foreach ($task as $heading => $value) : ?>
+                <li>
+                    Task Completed: <?= $task['completed'] ? "complete" : "not complete"; ?>
+                </li>
             <?php endforeach; ?>
         </ul>
-        
     </body>
 </html>
