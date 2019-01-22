@@ -6,7 +6,13 @@
         <title>Dcoument</title>
     </head>
     <body>
-        <h1><?= $greeting; ?></h1>
+        <ul>
+            <?php 
+                foreach($names as $name) {
+                    echo "<li>$name</li>";
+                }
+            ?>
+        </ul>
         
     </body>
 </html>
