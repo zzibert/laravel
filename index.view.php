@@ -7,11 +7,11 @@
     </head>
     <body>
         <ul>
-            <?php 
-                foreach($names as $name) {
-                    echo "<li>$name</li>";
-                }
-            ?>
+            <?php foreach ($person as $key => $value) : ?>
+
+                <li><?= $key . " => " . $value; ?></li>
+
+            <?php endforeach; ?>
         </ul>
         
     </body>
