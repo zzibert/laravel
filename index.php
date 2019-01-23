@@ -1,13 +1,12 @@
 <?php
 
-$task = [
-    'title' => 'finish homework',
-    'due' => 'today',
-    'assigned_to' => 'Jeffrey',
-    'completed' => false
-];
+require 'functions.php';
 
-require 'index.view.php';
+$animals = ['dog', 'cat'];
+
+dd('trolololo');
+
+// require 'index.view.php';
 
 
 
