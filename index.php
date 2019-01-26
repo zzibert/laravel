@@ -2,11 +2,31 @@
 
 require 'functions.php';
 
-$animals = ['dog', 'cat'];
+class Task {
+    public $description;
 
-dd('trolololo');
+    protected $completed = false;
 
-// require 'index.view.php';
+    public function __construct($description) {
+        $this->description = $description;
+    }
+
+    public function isComplete() {
+        return $this->completed;
+    }
+
+    public function complete(){
+        $this->completed = true;
+    }
+}
+
+$tasks = [
+    new Task('go to the store'),
+    new Task('Finish my screencast'),
+    new Task('Clean my room')
+];
+
+require 'index.view.php';
 
 
 
