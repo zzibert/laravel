@@ -1,32 +1,13 @@
 <?php
 
+require 'Task.php';
 require 'functions.php';
 
-class Task {
-    public $description;
+$pdo = connectToDb();
 
-    protected $completed = false;
+$tasks = fetchAllTasks($pdo);
 
-    public function __construct($description) {
-        $this->description = $description;
-    }
-
-    public function isComplete() {
-        return $this->completed;
-    }
-
-    public function complete(){
-        $this->completed = true;
-    }
-}
-
-$tasks = [
-    new Task('go to the store'),
-    new Task('Finish my screencast'),
-    new Task('Clean my room')
-];
+var_dump($tasks);
 
 require 'index.view.php';
-
-
 
