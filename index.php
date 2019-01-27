@@ -3,13 +3,7 @@
 
 require 'bootstrap.php';
 
-$tasks = $query->selectAll('todos', 'Task');
-
-$tasks = array_map(function ($task) {
-    $t = new Task();
-
-    $t->description
-})
+$tasks = $query->selectAll('trolololololo', 'Task');
 
 die(var_dump($tasks));
 
