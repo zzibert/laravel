@@ -1,9 +1,8 @@
 <?php
 
+$name = 'yoloBoss';
 
-require 'bootstrap.php';
+$greeting = 'hello, negro!';
 
-$tasks = $query->selectAll('trolololololo', 'Task');
-
-die(var_dump($tasks));
+echo 'Hello $name';
 
