@@ -5,8 +5,8 @@
 <body>
     <h1>
         <ul>
-            <?php foreach ($names as $name) : ?>
-                <li><?= $name ?></li>
+            <?php foreach ($person as $key => $value) : ?>
+                <li><?= 'the ' . $key . ' is ' . $value?></li>
             <?php endforeach ?>
         </ul>
     </h1>
