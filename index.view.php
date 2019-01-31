@@ -3,12 +3,14 @@
 <head>
 </head>
 <body>
-    <h1>
-        <ul>
-            <?php foreach ($person as $key => $value) : ?>
-                <li><?= 'the ' . $key . ' is ' . $value?></li>
-            <?php endforeach ?>
-        </ul>
-    </h1>
+    <h1>Task for the day</h1>
+    <?php foreach ($task as $key => $value) : ?>
+        <?php if($key != 'completed') : ?>
+            <li><?= ucwords($key) . ' is ' . $value?></li>
+        <?php endif ?>
+        <?php if($key == 'completed') : ?>
+            <li><?= ucwords($key) . ' is ' . $task['completed'] ? "complete" : "incomplete"?></li>
+        <?php endif ?>
+    <?php endforeach ?>
 </body>
 </html>

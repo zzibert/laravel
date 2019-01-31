@@ -1,12 +1,11 @@
 <?php
 
-$person = [
-    'age' => 31,
-    'hair' => 'brown',
-    'career' => 'web developer'
+$task = [
+    'title' => 'finish homework',
+    'due' => 'today',
+    'assigned_to' => 'myself',
+    'completed' => false
 ];
-
-$person['name'] = 'myself';
 
 function dd($array) {
     echo '<pre>';
@@ -14,6 +13,6 @@ function dd($array) {
     echo '</pre>';
 };
 
-die(dd($person));
+
 
  require './index.view.php';
