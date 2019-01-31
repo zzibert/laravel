@@ -7,10 +7,9 @@
     <?php foreach ($task as $key => $value) : ?>
         <?php if($key != 'completed') : ?>
             <li><?= ucwords($key) . ' is ' . $value?></li>
-        <?php endif ?>
-        <?php if($key == 'completed') : ?>
-            <li><?= ucwords($key) . ' is ' . $task['completed'] ? "complete" : "incomplete"?></li>
-        <?php endif ?>
+        <?php else : ?>
+            <li><?= ucwords($key) . ' is ' . echo ($task['completed'] ? "complete" : "incomplete")?></li>
+        <?php endif; ?>
     <?php endforeach ?>
 </body>
 </html>
