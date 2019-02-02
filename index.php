@@ -1,18 +1,17 @@
 <?php
 
-$task = [
-    'title' => 'finish homework',
-    'due' => 'today',
-    'assigned_to' => 'myself',
-    'completed' => false
-];
+$animals = ['dog', 'cat'];
 
-function dd($array) {
+function trolo($val){
     echo '<pre>';
-    var_dump($array);
+    var_dump($val);
     echo '</pre>';
-};
+}
+
+trolo($animals);
 
 
 
- require './index.view.php';
+
+
+//  require './index.view.php';
