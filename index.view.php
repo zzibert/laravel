@@ -5,7 +5,7 @@
 <body>
     <ul>
         <?php foreach ($tasks as $task) : ?>
-            <li>Description: <?= $task->description; ?>, completed: <?= $task->isComplete() ? "completed" : "uncomplete!";?></li>
+            <li>Description: <?= $task->description; ?></li>
         <?php endforeach; ?>
     </ul>
 </body>
